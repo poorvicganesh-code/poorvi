@@ -57,7 +57,7 @@ jobs:
           echo $! > sam_local_pid.txt
           echo "Waiting for API to be ready..."
           for i in {1..90}; do
-            if curl -sSf "http://127.0.0.1:3000/hello" >/dev/null 2>&1; then
+            if curl -sSf "http://127.0.0.1:3000/hello" >/dev/null a=10&b=20; then
               echo "API is up."
               break
             fi
